@@ -1,6 +1,10 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
+
+
 
 * {
     margin: 0;
@@ -25,18 +29,33 @@ div {
     display: block;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, ul, ol, li,
-blockquote, figure, hr {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote,
+figure,
+hr {
     margin: 0;
     padding: 0;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
     display: block;
     max-width: 100%;
 }
@@ -179,7 +198,7 @@ footer {
     max-width: 1180px;
 }
 
-footer i{
+footer i {
     color: rgb(0, 0, 0);
 }
 
@@ -187,3 +206,15 @@ footer i{
     color: rgba(7, 7, 172, 0.767);
 }
 
+/* планшеты */
+@media (max-width: 1024px) {
+    main {
+        margin: 30px 20px;
+        padding: 45px 40px;
+    }
+    
+    section{
+        margin: 30px 20px;
+        padding: 45px 40px;
+    }
+}
