@@ -212,3 +212,31 @@ footer i{
         height: 340px;
     }
 }
+/* ========== АДАПТИВ1 ========== */
+@media (max-width: 768px){
+  main{   margin: 20px 15px;
+          padding: 35px 25px;
+      }  
+ .projects-grid{
+      gap: 18px;
+ }
+.project-card{
+    padding: 24px 20px;
+}
+ .project-card h4{
+     font-size: 1.28rem;
+ }
+.skills{
+    justify-content: center;
+    gap: 12px;
+  }  
+}
+
+@media (max-widt: 480){
+    main{
+        padding: 30px 20px;
+    }
+    .project-card{
+        padding: 22px 18px;
+    }
+}
