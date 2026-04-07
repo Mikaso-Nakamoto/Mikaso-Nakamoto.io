@@ -217,4 +217,23 @@ footer i {
         margin: 30px 20px;
         padding: 45px 40px;
     }
+        .info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .background_pictures img {
+        width: 340px;
+        height: 390px;
+    }
+    
+    .infoshort {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .skills {
+        justify-content: center;
+    }
 }
+
