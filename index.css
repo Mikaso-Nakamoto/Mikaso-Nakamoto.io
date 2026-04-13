@@ -241,3 +241,33 @@ footer i {
     }
 }
 
+@media(max-width: 430px){
+
+  .background_pictures img {
+        width: 320px;
+        height: 370px;
+    }
+  .info{
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  main{
+    margin: 20px 10px;
+    padding: 35px 20px;
+  }
+
+  section{
+        margin: 20px 10px;
+        padding: 35px 20px;
+    }
+   .infoshort{
+    min-width: 100%;
+    text-align: center;
+   }
+   .projects-grid{
+    grid-template-columns: 1fr;
+   }
+
+}
+
