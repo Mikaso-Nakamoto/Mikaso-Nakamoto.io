@@ -109,6 +109,10 @@ main {
     flex-wrap: wrap;
     gap: 14px;
     margin: 8px 0 20px 0;
+  -webkit-user-select: none; /* для Safari */
+  -moz-user-select: none; /* для Firefox */
+  -ms-user-select: none; /* для Internet Explorer/Edge */
+  user-select: none; /* для остальных браузеров */
 }
 
 .skill-tag {
@@ -207,7 +211,13 @@ footer i {
 }
 
 .mylist{
-    
+}
+
+.project-card p, h4{
+  -webkit-user-select: none; /* для Safari */
+  -moz-user-select: none; /* для Firefox */
+  -ms-user-select: none; /* для Internet Explorer/Edge */
+  user-select: none; /* для остальных браузеров */
 }
 
 /* планшеты */
@@ -268,6 +278,5 @@ footer i {
    .projects-grid{
     grid-template-columns: 1fr;
    }
-
 }
 
