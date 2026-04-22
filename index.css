@@ -203,15 +203,14 @@ footer {
 }
 
 footer i {
-    color: rgb(0, 0, 0);
+    color: rgb(65, 22, 182);
 }
 
 ::selection {
     color: rgba(7, 7, 172, 0.767);
 }
 
-.mylist{
-}
+
 
 .project-card p, h4{
   -webkit-user-select: none; /* для Safari */
@@ -252,7 +251,9 @@ footer i {
 }
 
 @media(max-width: 430px){
-
+   body{
+    background-attachment: scroll;
+   }
   .background_pictures img {
         width: 320px;
         height: 370px;
