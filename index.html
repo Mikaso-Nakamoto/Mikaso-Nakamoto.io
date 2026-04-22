@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/png" href="HolyC_Logo.svg.png" />
     <title>Арсений Орлов | Junior Developer | Ростов-на-Дону</title>
   </head>
 
   <body id="body">
+    <div class="langToggle">
+      <img
+        src="https://avatars.mds.yandex.net/get-entity_search/118194/224019704/S600xU_2x"
+        alt="RU"
+        style="cursor: pointer; width: 32px; height: 32px"
+      />
+    </div>
     <main>
       <div class="info">
         <!-- Левая колонка — фото -->
@@ -20,18 +28,29 @@
 
         <!-- Правая колонка -->
         <div class="infoshort">
-          <h2>Орлов Арсений</h2>
-          <h4>15-летний студент | Ростов-на-Дону</h4>
+          <h2 data-ru="Орлов Арсений" data-en="Orlov Arseny">Орлов Арсений</h2>
+          <h4
+            data-ru="15-летний студент | Ростов-на-Дону"
+            data-en="15-year-old student | Rostov-on-Don"
+          >
+            15-летний студент | Ростов-на-Дону
+          </h4>
 
           <div class="project">
             <div class="skills" id="skills"></div>
 
-            <h3>Проекты</h3>
+            <h3 data-ru="Проекты" data-en="Projects">Проекты</h3>
 
             <div class="projects-grid">
               <div class="project-card">
-                <h4>Внутриигровой оверлей</h4>
-                <p>
+                <h4 data-ru="Внутриигровой оверлей" data-en="In-game overlay">
+                  Внутриигровой оверлей
+                </h4>
+                <p
+                  data-ru="Оверлей для отображения информации в игре, написанный на C# с
+                  использованием Avalonia UI."
+                  data-en="An overlay for displaying information in the game, written in C# using Avalonia UI."
+                >
                   Оверлей для отображения информации в игре, написанный на C# с
                   использованием Avalonia UI.
                 </p>
@@ -40,14 +59,25 @@
                   target="_blank"
                   class="card-link"
                   rel="noopener noreferrer"
+                  data-ru="Посмотреть на GitHub →"
+                  data-en="View on GitHub →"
                 >
                   Посмотреть на GitHub →
                 </a>
               </div>
 
               <div class="project-card">
-                <h4>Сайт отслеживания курсов макроэкономики</h4>
-                <p>
+                <h4
+                  data-ru="Сайт отслеживания курсов макроэкономики"
+                  data-en="Macroeconomics Course Tracking Website"
+                >
+                  Сайт отслеживания курсов макроэкономики
+                </h4>
+                <p
+                  data-ru=" Веб-приложение для мониторинга экономических показателей (в
+                  разработке)."
+                  data-en="A web application for monitoring economic indicators (under development)."
+                >
                   Веб-приложение для мониторинга экономических показателей (в
                   разработке).
                 </p>
@@ -56,6 +86,8 @@
                   target="_blank"
                   class="card-link"
                   rel="noopener noreferrer"
+                  data-ru="Посмотреть проект →"
+                  data-en="View the project →"
                 >
                   Посмотреть проект →
                 </a>
@@ -63,8 +95,18 @@
 
               <!-- Третья карточка будет автоматически под первыми двумя -->
               <div class="project-card">
-                <h4>Калькулятор уравнений</h4>
-                <p>
+                <h4
+                  data-ru="Калькулятор уравнений"
+                  data-en="Equation Calculator"
+                >
+                  Калькулятор уравнений
+                </h4>
+                <p
+                  data-ru="Удобный калькулятор математических уравнений, написанный на
+                  C#."
+                  data-en="A convenient calculator for mathematical equations written in
+ C#."
+                >
                   Удобный калькулятор математических уравнений, написанный на
                   C#.
                 </p>
@@ -73,6 +115,8 @@
                   target="_blank"
                   class="card-link"
                   rel="noopener noreferrer"
+                  data-ru="Посмотреть на GitHub →"
+                  data-en="View on GitHub →"
                 >
                   Посмотреть на GitHub →
                 </a>
@@ -81,19 +125,19 @@
           </div>
 
           <div class="Me">
-            <h3>Обо мне:</h3>
+            <h3 data-ru="Обо мне:" data-en="About me:">Обо мне:</h3>
             <p></p>
           </div>
         </div>
       </div>
     </main>
     <section id="contact">
-      <h3>связаться</h3>
+      <h3 data-ru="связаться" data-en="contact">связаться</h3>
       <div id="mylist">
         <ul>
           <li>
             <h4>
-              почта:
+              <span data-ru="почта:" data-en="mail:"> почта: </span>
               <a
                 href="mailto:mikaso.nakamoto@gmail.com"
                 class="copy-link"
@@ -132,7 +176,11 @@
       </div>
     </section>
     <footer>
-      <i>© 2026 Арсений Орлов. Все права защищены лично мной.</i>
+      <i
+        data-ru="© 2026 Арсений Орлов. Все права защищены лично мной."
+        data-en="© 2026 Arseny Orlov. All rights are reserved by me personally."
+        >© 2026 Арсений Орлов. Все права защищены лично мной.</i
+      >
     </footer>
     <script src="index.js"></script>
   </body>

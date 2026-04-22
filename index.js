@@ -20,3 +20,24 @@ document.getElementById('copyMail').addEventListener('click', async () => {
 });
 
 
+function switchLanguage(){
+  const isRu = document.documentElement.lang === `ru`;
+  const newLang = isRu ? `en` : `ru`;
+
+  document.querySelectorAll(`[data-ru][data-en]`).forEach(el =>{el.textContent = el.getAttribute(`data-${newLang}`)});
+  document.documentElement.lang = newLang;
+
+ const flagimg = document.querySelector(`.langToggle img`);
+ if(`flagimg`){
+  if(newLang === `ru`){
+    flagimg.scr = "https://avatars.mds.yandex.net/get-entity_search/118194/224019704/S600xU_2x"
+    flagimg.alt = "RU"
+  }
+  else{
+    flagimg.scr = "https://img.freepik.com/premium-vector/british-flag-original-colors-proportions-vector-illustration-eps-10_148553-484.jpg?semt=ais_hybrid&w=740&q=80"
+    flagimg.alt = "EN"
+  }
+ }
+}
+
+document.querySelector(`.langToggle`).addEventListener(`click`, switchLanguage);
